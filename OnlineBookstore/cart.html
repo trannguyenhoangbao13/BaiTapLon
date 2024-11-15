@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Online Bookstore</title>
+    <!-- Liên kết tệp CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Thanh điều hướng giống như ở các trang khác -->
+            <div class="logo">
+                <a href="index.html">Online Bookstore</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="products.html">Sản Phẩm</a></li>
+                <li><a href="news.html">Tin Tức</a></li>
+                <li><a href="cart.html">Giỏ Hàng</a></li>
+                <li><a href="checkout.html">Thanh Toán</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Giỏ Hàng Của Bạn</h1>
+        <div class="cart-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Sản Phẩm</th>
+                        <th>Giá</th>
+                        <th>Số Lượng</th>
+                        <th>Tổng</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="product-name">Sách 1</td>
+                        <td class="product-price">150,000₫</td>
+                        <td class="product-quantity">
+                            <input type="number" value="1" min="1">
+                        </td>
+                        <td class="product-total">150,000₫</td>
+                        <td class="product-action">
+                            <button class="btn remove-btn">Xóa</button>
+                        </td>
+                    </tr>
+                    <!-- Thêm các dòng sản phẩm khác ở đây -->
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <h2>Tổng Thanh Toán</h2>
+                <p class="total-price">Tổng cộng: 150,000₫</p>
+                <button class="btn checkout-btn">Thanh Toán</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Bookstore. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

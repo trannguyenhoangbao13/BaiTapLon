@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán - Online Bookstore</title>
+    <!-- Liên kết tệp CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <!-- Thanh điều hướng giống như ở các trang khác -->
+            <div class="logo">
+                <a href="index.html">Online Bookstore</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="about.html">Giới Thiệu</a></li>
+                <li><a href="products.html">Sản Phẩm</a></li>
+                <li><a href="news.html">Tin Tức</a></li>
+                <li><a href="cart.html">Giỏ Hàng</a></li>
+                <li><a href="checkout.html">Thanh Toán</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Thông Tin Thanh Toán</h1>
+        <div class="checkout-container">
+            <form class="checkout-form">
+                <h2>Thông Tin Giao Hàng</h2>
+                <label for="fullName">Họ và Tên:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Số Điện Thoại:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Địa Chỉ:</label>
+                <input type="text" id="address" name="address" required>
+
+                <h2>Phương Thức Thanh Toán</h2>
+                <div class="payment-methods">
+                    <label>
+                        <input type="radio" name="payment" value="credit-card" checked> Thẻ Tín Dụng
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="cash-on-delivery"> Thanh Toán Khi Nhận Hàng
+                    </label>
+                </div>
+
+                <button type="submit" class="btn checkout-btn">Xác Nhận Thanh Toán</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Online Bookstore. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

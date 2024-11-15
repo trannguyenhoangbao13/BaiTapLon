@@ -1,0 +1,393 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-form input {
+    padding: 5px;
+    width: 200px;
+}
+
+.search-form button {
+    padding: 5px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+}
+
+footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+.book-list {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.book-item {
+    text-align: center;
+}
+
+.book-item img {
+    width: 150px;
+    height: 200px;
+}
+
+
+/* Style cho Nút Đăng Ký */
+
+#registerButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #4CAF50;
+    /* Màu nền xanh */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#registerButton:hover {
+    background-color: #45a049;
+    /* Màu nền khi hover */
+    transform: scale(1.05);
+    /* Phóng to khi hover */
+}
+
+
+/* Style cho Nút Đăng Nhập */
+
+#loginButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #007BFF;
+    /* Màu nền xanh dương */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#loginButton:hover {
+    background-color: #0056b3;
+    /* Màu nền khi hover */
+    transform: scale(1.05);
+    /* Phóng to khi hover */
+}
+
+
+/*GIỎ HÀNG - CART---------------------------------------------*/
+
+
+/* Style cho tiêu đề chính */
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+
+/* Style cho container của giỏ hàng */
+
+.cart-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style cho bảng giỏ hàng */
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+}
+
+.cart-table td {
+    color: #333;
+}
+
+
+/* Style cho input số lượng */
+
+.product-quantity input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+/* Style cho nút hành động */
+
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-btn {
+    background-color: #FF4B4B;
+}
+
+.remove-btn:hover {
+    background-color: #e60000;
+}
+
+.checkout-btn {
+    background-color: #28a745;
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+}
+
+
+/* Style cho phần tổng thanh toán */
+
+.cart-summary {
+    text-align: right;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/*TRANG THANH TOÁN-CHECKOUT-------------------------------------------
+/* Style cho tiêu đề chính */
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+
+/* Style cho container của checkout */
+
+.checkout-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style cho form checkout */
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-form h2 {
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.checkout-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.checkout-form input[type="text"],
+.checkout-form input[type="email"],
+.checkout-form input[type="tel"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.payment-methods label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.payment-methods input {
+    margin-right: 10px;
+}
+
+
+/* Style cho nút Thanh Toán */
+
+.checkout-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+}
+
+
+/*LIÊN HỆ - CONTACT
+/* Style cho tiêu đề và phần mô tả */
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.contact-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.contact-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+/* Style cho biểu mẫu liên hệ */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}

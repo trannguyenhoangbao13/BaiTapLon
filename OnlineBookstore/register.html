@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký - Online Bookstore</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">Online Bookstore</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="about.html">Giới Thiệu</a></li>
+                    <li><a href="products.html">Sản Phẩm</a></li>
+                    <li><a href="news.html">Tin Tức</a></li>
+                    <li><a href="cart.html">Giỏ Hàng</a></li>
+                    <li><a href="checkout.html">Thanh Toán</a></li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="registration-form">
+            <h2>Đăng ký thành viên</h2>
+            <form id="registerForm">
+                <label for="username">Tên đăng nhập:</label>
+                <input type="text" id="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="password">Mật khẩu:</label>
+                <input type="password" id="password" required>
+
+                <label for="confirmPassword">Xác nhận mật khẩu:</label>
+                <input type="password" id="confirmPassword" required>
+
+                <button type="submit">Đăng ký</button>
+            </form>
+            <p id="registerMessage"></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Giống phần footer ở index.html -->
+    </footer>
+
+    <script>
+        // JavaScript kiểm tra dữ liệu nhập
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                document.getElementById('registerMessage').innerText = "Mật khẩu không khớp!";
+                return;
+            }
+
+            // Lưu thông tin vào LocalStorage
+            const user = {
+                username: document.getElementById('username').value,
+                email: document.getElementById('email').value,
+                password: password
+            };
+            localStorage.setItem('user', JSON.stringify(user));
+            document.getElementById('registerMessage').innerText = "Đăng ký thành công!";
+        });
+    </script>
+</body>
+
+</html>
